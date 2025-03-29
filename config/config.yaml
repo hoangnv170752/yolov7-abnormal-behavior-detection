@@ -1,0 +1,36 @@
+data:
+  img_size: 416
+  root: data
+  test_list: data/test_list_filtered.txt
+  train_list: data/train_list_filtered.txt
+  val_list: data/val_list_filtered.txt
+inference:
+  display: true
+  gpu_id: 0
+  output_fps: 30
+  save_output: true
+  video_input: true
+model:
+  conf_thres: 0.25
+  hidden_dim: 192
+  iou_thres: 0.45
+  num_keypoints: 17
+  ojr_hidden_dim: 96
+  ojr_num_layers: 2
+  ojr_save_path: weights/ojr_state_dict.pt
+  save_path: weights/abnormal_state_dict.pt
+  temporal_window: 5
+  yolo_weights: weights/yolov7.pt
+training:
+  batch_size: 8
+  epochs: 30
+  abnormal_class_weight: 3.0
+  behavior_loss_weight: 0.5
+  keypoint_loss_weight: 0.5
+  lr: 0.0003
+  num_workers: 2
+  occlusion_threshold: 0.3
+  ojr_epochs: 10
+  ojr_lr: 0.0005
+  weight_decay: 0.00001
+  behavior_classes: 5  # Normal, Intrusion, Threat, Robbery, Other abnormal

@@ -1,0 +1,110 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+
+# Environment directories
+.env
+.venv
+env/
+venv/
+ENV/
+
+# YOLO specific
+*.pt
+*.weights
+*.onnx
+runs/
+weights/
+
+# Dataset files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.mp4
+*.avi
+*.mov
+*.MOV
+*.h264
+*.mkv
+*.webm
+*.flv
+*.VOB
+
+# Exceptions - keep specific media files if needed
+!data/samples/*.jpg
+!data/samples/*.png
+!data/samples/*.mp4
+
+# Logs
+logs/
+*.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Results and outputs
+results/
+output/
+inference/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
